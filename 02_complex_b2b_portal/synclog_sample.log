@@ -1,0 +1,20 @@
+[2026-01-12 10:39:15] [Init] Initializing Enterprise Sync Bot... (기업용 동기화 봇 초기화 중...)
+[2026-01-12 10:39:15] 🔐 [Security] Fetching credentials from Google Secret Manager... (구글 시크릿 매니저에서 보안 키 로드 중...)
+[2026-01-12 10:39:16] [Env] ✅ Configuration Loaded: Headless=True, Base=https://b2b.sample.com (설정 로드 완료)
+
+[2026-01-12 10:39:19] 🕷️ [Scraping] 1/3: Accessing B2B Portal... (B2B 포털 접속 중...)
+[2026-01-12 10:39:21] [Login] Gate detected -> Checking Session... (로그인 게이트 감지 -> 세션 확인 중)
+[2026-01-12 10:39:21] [Login] ✅ Already Logged in (Session Valid). (이미 로그인 상태 - 세션 유효함)
+
+[2026-01-12 10:39:23] [Nav] Moving to target category: 'Category_A'... (타겟 카테고리 진입 중)
+[2026-01-12 10:39:26] [State] Saved storage state to /app/artifacts/storage_state.json (로그인 상태 저장 완료)
+[2026-01-12 10:39:27] [Action] Locating 'Export XLSX' menu... ('엑셀 내보내기' 메뉴 탐색 중)
+[2026-01-12 10:39:31] [Action] ⚠️ Menu hidden, trying direct trigger... (메뉴 숨김 감지, 직접 실행 시도...) 
+[2026-01-12 10:39:34] [Action] ✅ Export Modal Detected -> Options Selected. (내보내기 창 감지 -> 옵션 선택 완료)
+
+[2026-01-12 10:39:35] [Wait] Waiting for file generation... (파일 생성 대기 중...)
+[2026-01-12 10:39:40] [Download] Saved: /app/artifacts/SampleSite_export_20260114.xlsx (파일 다운로드 및 저장 성공)
+
+[2026-01-12 10:39:40] [DB] Updating Cloud SQL & Timestamp... (클라우드 DB 및 타임스탬프 업데이트)
+[2026-01-12 10:39:41] [Notification] Sending Email Report to Admin... (관리자에게 이메일 리포트 전송 중)
+[2026-01-12 10:39:41] [Exit] Log saved to /app/logs/run_YYYYMMDD.log (로그 파일 저장 완료)
